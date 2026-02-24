@@ -1,5 +1,142 @@
 <!DOCTYPE HTML>
+<html lang="en"><!DOCTYPE HTML>
 <html lang="en">
+	<head>
+		<title>ReteCope Technology | Known Issues & System Status</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body ontouchstart=""> 
+		<div id="page-wrapper">
+
+			<header id="header-fixed">
+				<div class="main-container">
+					<a href="index.html" id="logo" class="image-logo">
+						<img src="images/logo.png" alt="ReteCope Technology Logo">
+					</a>
+					<button class="menu-toggle" id="menuBtn" aria-label="Toggle Menu" onclick="toggleMobileMenu(event)">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</button>
+					<nav id="main-nav">
+						<a href="index.html">Melbourne</a>
+						<a href="karratha.html">Karratha</a>
+						<a href="issues.html" class="active-link">Issues</a>
+						<a href="about.html">About Us</a>
+						<a href="contact.html">Contact Us</a>
+					</nav>
+				</div>
+			</header>
+
+			<section id="hero-banner" class="status-hero">
+				<div class="main-container">
+					<div class="hero-flex">
+						<div class="hero-content">
+							<div class="badge">Live Network Monitoring</div>
+							<h1>System Status &<br>Known Issues.</h1>
+							<p class="hero-slogan">Real-time updates on infrastructure, outages, and maintenance across Melbourne and the Pilbara. Check here before requesting a call-out.</p>
+							<div class="hero-btn-wrapper">
+								<a href="contact.html" class="hero-btn big-btn">⚠️ Report New Issue</a>
+							</div>
+						</div>
+						<div class="hero-image">
+							<img src="images/issues_banner.png" class="scalable-hero" alt="Karratha Industrial IT Support">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="logo-slider">
+				<div class="slider-track">
+					<span class="text-logo unifi">U<span>niFi</span></span>
+					<span class="text-logo cisco">CISCO</span>
+					<span class="text-logo sophos">SOPHOS</span>
+					<span class="text-logo starlink">STARLINK</span>
+					<span class="text-logo telstra">Telstra</span>
+					<span class="text-logo netgear">NETGEAR</span>
+                    <span class="text-logo hikvision">HIK<span>VISION</span></span>
+					<span class="text-logo dahua">dahua</span>
+					<span class="text-logo unifi">U<span>niFi</span></span>
+					<span class="text-logo cisco">CISCO</span>
+					<span class="text-logo sophos">SOPHOS</span>
+				</div>
+			</section>
+
+			<section class="services-section">
+				<div class="main-container">
+					<div class="services-grid">
+						<div class="service-card status-card green">
+							<div class="card-icon-wrapper">✅</div>
+							<h4>Melbourne NBN</h4>
+							<p>All residential and commercial fiber gateways are operating within normal parameters.</p>
+                            <span class="status-label">Operational</span>
+						</div>
+						<div class="service-card status-card yellow">
+							<div class="card-icon-wrapper">🟡</div>
+							<h4>Karratha Starlink</h4>
+							<p>Scheduled maintenance on Pilbara satellite ground stations (1AM - 3AM AWST).</p>
+                            <span class="status-label">Maintenance</span>
+						</div>
+						<div class="service-card status-card green">
+							<div class="card-icon-wrapper">🛡️</div>
+							<h4>CCTV Cloud Storage</h4>
+							<p>Remote monitoring and recording services are 100% active. No reported delays.</p>
+                            <span class="status-label">Operational</span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer id="modern-footer">
+				<div class="main-container">
+					<div class="footer-grid">
+						<div class="footer-col brand-col">
+							<img src="images/logo.png" alt="ReteCope Logo" class="footer-logo">
+							<p>Expert infrastructure and proactive remote support for Commercial and Residential clients.</p>
+							<div class="footer-badges">
+								<span class="license-badge">VIC PSIR: Z33-160-70S</span>
+							</div>
+						</div>
+						<div class="footer-col">
+							<h4>Solutions</h4>
+							<ul>
+								<li><a href="index.html">Melbourne Support</a></li>
+								<li><a href="karratha.html">Karratha Support</a></li>
+								<li><a href="about.html">About Us</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Get In Touch</h4>
+							<ul class="contact-list">
+								<li><a href="tel:0478882356">📞 0478 88 23 56</a></li>
+								<li><a href="mailto:info@retecope.com.au">✉️ info@retecope.com.au</a></li>
+								<li>📍 Victoria & WA Support</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<div class="bottom-content">
+							<p>&copy; 2026 ReteCope Technology. Directed by Kim Heng Ly (Oliver).</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<script>
+			const nav = document.getElementById("main-nav");
+			const btn = document.getElementById("menuBtn");
+			function toggleMobileMenu(e) { e.stopPropagation(); nav.classList.toggle("is-open"); btn.classList.toggle("active"); }
+			function closeMenu() { nav.classList.remove("is-open"); btn.classList.remove("active"); }
+			document.querySelectorAll('#main-nav a').forEach(link => { link.addEventListener('click', closeMenu); });
+			document.addEventListener('click', (e) => { if (!nav.contains(e.target) && !btn.contains(e.target)) closeMenu(); });
+			window.addEventListener('scroll', () => { if (nav.classList.contains("is-open")) closeMenu(); }, { passive: true });
+		</script>
+	</body>
+</html>
 	<head>
 		<title>Known Issues | ReteCope Technology Blog</title>
 		<meta charset="utf-8" />

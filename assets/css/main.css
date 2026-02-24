@@ -32,12 +32,11 @@ ul { list-style: none !important; }
 }
 .active-link { background: #f1f5f9; color: #064e3b !important; }
 
-/* --- [3] HERO: ORIGINAL WORKING FOUNDATION (STAYS LARGE FOR MELBOURNE/KARRATHA) --- */
+/* --- [3] HERO: WORKING FOUNDATION --- */
 #page-wrapper { padding-top: 80px; }
 #hero-banner {
-    min-height: 600px; /* Restored to original size */
-    display: flex; align-items: center; color: #ffffff; 
-    padding: 80px 0; /* Restored original padding */
+    min-height: 600px;
+    display: flex; align-items: center; color: #ffffff; padding: 80px 0;
     background: linear-gradient(145deg, #0f172a 0%, #064e3b 60%, #022c22 100%);
 }
 
@@ -71,14 +70,12 @@ ul { list-style: none !important; }
 }
 .hero-image img:hover { transform: scale(1.05) rotate(1deg) translateY(-10px) !important; }
 
-/* --- [4] LOGO SLIDER (RETAINED BRAND COLORS) --- */
+/* --- [4] LOGO SLIDER --- */
 .logo-slider { background: #ffffff; padding: 35px 0; overflow: hidden; border-bottom: 1px solid #e2e8f0; white-space: nowrap; }
 .slider-track { display: flex; align-items: center; animation: scroll 40s linear infinite; width: max-content; }
 .logo-slider:hover .slider-track { animation-play-state: paused; }
-
 .text-logo { font-size: 1.8rem; font-weight: 800; margin: 0 50px; transition: 0.4s; display: inline-block; opacity: 0.6; }
 .text-logo:hover { opacity: 1; transform: scale(1.2); }
-
 .unifi { color: #0055ff !important; font-family: sans-serif; } 
 .cisco { color: #00bceb !important; letter-spacing: 2px; border-top: 3px solid #00bceb; }
 .sophos { color: #002f56 !important; font-style: italic; }
@@ -91,12 +88,57 @@ ul { list-style: none !important; }
 .dahua { color: #ff0000 !important; } .dahua span { color: #333 !important; }
 @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
-/* --- [5] SERVICE CARDS --- */
-.services-section { padding: 80px 0; background: #f1f5f9; }
-.services-grid { display: grid; grid-template-columns: 1fr; gap: 40px; width: 90%; margin: 0 auto; }
-.service-card { background: #ffffff; border-radius: 35px; padding: 60px 40px; text-align: center; border: 1px solid rgba(137, 207, 240, 0.1); box-shadow: 0 8px 25px rgba(0,0,0,0.05); transition: 0.4s cubic-bezier(0.34, 1.56, 0.64, 1); }
-.card-icon-wrapper { font-size: 4.5rem; margin-bottom: 30px; display: inline-block; background: #f0f9ff; width: 120px; height: 120px; line-height: 120px; border-radius: 30px; }
-.service-card:hover { transform: translateY(-15px) scale(1.02); border-color: #854d0e; }
+/* --- [5] SERVICE CARDS (ENLARGED & MODERNIZED) --- */
+.services-section { padding: 100px 0; background: #f1f5f9; }
+.services-grid { display: grid; grid-template-columns: 1fr; gap: 50px; width: 90%; max-width: 1200px; margin: 0 auto; }
+
+.service-card { 
+    background: #ffffff; 
+    border-radius: 45px; /* Softer, larger corners */
+    padding: 80px 50px; /* Increased internal padding */
+    text-align: center; 
+    border: 1px solid rgba(137, 207, 240, 0.15); 
+    box-shadow: 0 15px 40px rgba(0,0,0,0.06); 
+    transition: 0.5s cubic-bezier(0.34, 1.56, 0.64, 1); 
+    position: relative;
+    overflow: hidden;
+}
+
+.card-icon-wrapper { 
+    font-size: 5.5rem; /* Bigger icon */
+    margin-bottom: 40px; 
+    display: inline-block; 
+    background: #f0f9ff; 
+    width: 150px; /* Larger icon container */
+    height: 150px; 
+    line-height: 150px; 
+    border-radius: 40px; 
+    transition: 0.4s ease;
+}
+
+.service-card h4 {
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 20px;
+    color: #0f172a;
+}
+
+.service-card p {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #475569;
+}
+
+.service-card:hover { 
+    transform: translateY(-20px) scale(1.03); 
+    border-color: #854d0e; 
+    box-shadow: 0 30px 60px rgba(0,0,0,0.12);
+}
+
+.service-card:hover .card-icon-wrapper {
+    transform: rotate(-10deg) scale(1.1);
+    background: #e0f2fe;
+}
 
 /* --- [6] FOOTER --- */
 #modern-footer { background: #0f172a; color: #cbd5e1; padding: 60px 0 30px 0; border-top: 4px solid #854d0e; }
@@ -126,11 +168,10 @@ ul { list-style: none !important; }
 }
 
 /* --- [8] CONTACT PAGE ONLY: RECTANGULAR SUPPORT DESK --- */
-
 .support-desk-hero {
     background: radial-gradient(circle at top right, #064e3b, #022c22, #0f172a) !important;
-    min-height: 450px !important; /* FIXED RECTANGLE SIZE ONLY FOR CONTACT */
-    padding: 60px 0 !important;   /* SHORTER VERTICAL LOOK ONLY FOR CONTACT */
+    min-height: 450px !important; 
+    padding: 60px 0 !important;   
 }
 
 .badge-outline {
@@ -168,7 +209,6 @@ ul { list-style: none !important; }
 }
 
 /* --- [9] ABOUT PAGE SPECIFIC DESIGN --- */
-
 .about-hero-layout {
     background: radial-gradient(circle at top left, #0f172a, #064e3b) !important;
     min-height: 450px !important;
@@ -226,7 +266,6 @@ ul { list-style: none !important; }
     margin-right: 5px;
 }
 
-/* Responsive adjustment */
 @media screen and (max-width: 980px) {
     .about-profile-card {
         flex: 1;

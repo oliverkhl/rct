@@ -3,7 +3,147 @@
 	<head>
 		<title>Contact Us | ReteCope Technology</title>
 		<link rel="icon" type="image/png" href="images/favicon.png">
+		<meta charset="utf-8" /><!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<title>Contact Support | ReteCope Technology</title>
 		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+	</head>
+	<body ontouchstart=""> 
+		<div id="page-wrapper">
+
+			<header id="header-fixed">
+				<div class="main-container">
+					<a href="index.html" class="image-logo">
+						<img src="images/logo.png" alt="ReteCope Technology Logo">
+					</a>
+					<button class="menu-toggle" id="menuBtn" onclick="toggleMobileMenu(event)">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</button>
+					<nav id="main-nav">
+						<a href="index.html">Melbourne</a>
+						<a href="karratha.html">Karratha</a>
+						<a href="issues.html">Issues</a>
+						<a href="about.html">About Us</a>
+						<a href="contact.html" class="active-link">Contact Us</a>
+					</nav>
+				</div>
+			</header>
+
+			<section id="hero-banner" class="support-desk-hero">
+				<div class="main-container">
+					<div class="hero-flex">
+						
+						<div class="hero-content">
+							<div class="badge-outline">Direct Support Desk</div>
+							<h1>Let's Solve Your<br>IT Challenges.</h1>
+							<p class="hero-slogan">Direct technical accountability for residential and commercial infrastructure. Fill out the request form to start.</p>
+							
+							<div class="hero-action-row">
+								<a href="#" class="action-btn chat-btn"><span>💬</span> Live Chat</a>
+								<a href="issues.html" class="action-btn report-btn"><span>⚠️</span> Report Outage</a>
+								<a href="tel:0478882356" class="action-btn book-btn"><span>📞</span> Book Call</a>
+							</div>
+						</div>
+
+						<div class="glass-form-container">
+							<form class="support-form-modern">
+								<h3>Request Support</h3>
+								<div class="form-input-wrapper">
+									<input type="text" placeholder="Full Name" required>
+								</div>
+								<div class="form-input-wrapper">
+									<input type="email" placeholder="Email Address" required>
+								</div>
+								<div class="form-input-wrapper">
+									<select>
+										<option>General Support</option>
+										<option>Network Issue</option>
+										<option>Security/CCTV</option>
+									</select>
+								</div>
+								<div class="form-input-wrapper inquiry-box">
+									<select>
+										<option>Inquiry Type</option>
+										<option>Urgent Outage</option>
+										<option>Standard Request</option>
+									</select>
+								</div>
+								<button type="submit" class="submit-btn-glow">🚀 Send Request</button>
+							</form>
+						</div>
+
+					</div>
+				</div>
+			</section>
+
+			<section class="logo-slider">
+				<div class="slider-track">
+					<span class="text-logo unifi">U<span>niFi</span></span>
+					<span class="text-logo cisco">CISCO</span>
+					<span class="text-logo sophos">SOPHOS</span>
+					<span class="text-logo starlink">STARLINK</span>
+					<span class="text-logo telstra">Telstra</span>
+					<span class="text-logo netgear">NETGEAR</span>
+                    <span class="text-logo hikvision">HIK<span>VISION</span></span>
+					<span class="text-logo dahua">dahua</span>
+					<span class="text-logo unifi">U<span>niFi</span></span>
+					<span class="text-logo cisco">CISCO</span>
+					<span class="text-logo sophos">SOPHOS</span>
+				</div>
+			</section>
+
+			<footer id="modern-footer">
+				<div class="main-container">
+					<div class="footer-grid">
+						<div class="footer-col brand-col">
+							<img src="images/logo.png" alt="ReteCope Logo" class="footer-logo">
+							<p>Expert infrastructure and proactive remote support for Commercial and Residential clients.</p>
+							<div class="footer-badges">
+								<span class="license-badge">VIC PSIR: Z33-160-70S</span>
+							</div>
+						</div>
+						<div class="footer-col">
+							<h4>Solutions</h4>
+							<ul>
+								<li><a href="index.html">Melbourne Support</a></li>
+								<li><a href="karratha.html">Karratha Support</a></li>
+								<li><a href="issues.html">Issue</a></li>
+								<li><a href="about.html">About Us</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Get In Touch</h4>
+							<ul class="contact-list">
+								<li><a href="tel:0478882356">📞 0478 88 23 56</a></li>
+								<li><a href="mailto:info@retecope.com.au">✉️ info@retecope.com.au</a></li>
+								<li>📍 Victoria & WA Support</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<div class="bottom-content">
+							<p>&copy; 2026 ReteCope Technology. Directed by Kim Heng Ly (Oliver).</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+
+		</div>
+
+		<script>
+			const nav = document.getElementById("main-nav");
+			const btn = document.getElementById("menuBtn");
+			function toggleMobileMenu(e) { e.stopPropagation(); nav.classList.toggle("is-open"); btn.classList.toggle("active"); }
+			function closeMenu() { nav.classList.remove("is-open"); btn.classList.remove("active"); }
+			document.querySelectorAll('#main-nav a').forEach(link => { link.addEventListener('click', closeMenu); });
+		</script>
+	</body>
+</html>
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>

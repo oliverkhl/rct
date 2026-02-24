@@ -1,105 +1,143 @@
 <!DOCTYPE HTML>
-<html>
+<html lang="en">
 	<head>
 		<title>About Us | ReteCope Technology</title>
-		<link rel="icon" type="image/png" href="images/favicon.png">
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 	</head>
-	<body class="subpage">
+	<body ontouchstart=""> 
 		<div id="page-wrapper">
 
-			<section id="header">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h1>
-								<a href="index.html" id="logo">
-									ReteCope Technology
-								</a>
-							</h1>
-							<nav id="nav">
-								<a href="index.html">Melbourne</a>
-								<a href="karratha.html">Karratha</a>
-								<a href="documents.html">Documents</a>
-								<a href="about.html">About</a>
-								<a href="contact.html">Contact</a>
-							</nav>
+			<header id="header-fixed">
+				<div class="main-container">
+					<a href="index.html" class="image-logo">
+						<img src="images/logo.png" alt="ReteCope Technology Logo">
+					</a>
+					<button class="menu-toggle" id="menuBtn" onclick="toggleMobileMenu(event)">
+						<span class="bar"></span>
+						<span class="bar"></span>
+						<span class="bar"></span>
+					</button>
+					<nav id="main-nav">
+						<a href="index.html">Melbourne</a>
+						<a href="karratha.html">Karratha</a>
+						<a href="issues.html">Issues</a>
+						<a href="about.html" class="active-link">About Us</a>
+						<a href="contact.html">Contact Us</a>
+					</nav>
+				</div>
+			</header>
+
+			<section id="hero-banner" class="about-hero-layout">
+				<div class="main-container">
+					<div class="hero-flex">
+						
+						<div class="hero-content">
+							<div class="badge-outline">Our Story</div>
+							<h1>Local Expertise.<br>Global Standards.</h1>
+							<p class="hero-slogan">ReteCope Technology provides direct accountability for IT infrastructure. Led by Kim Heng Ly (Oliver), we bridge the gap between complex technology and seamless business operations.</p>
 						</div>
+
+						<div class="about-profile-card">
+							<div class="profile-icon">👨‍💻</div>
+							<h3>Kim Heng Ly</h3>
+							<p>Principal Consultant (Oliver)</p>
+							<div class="profile-divider"></div>
+							<ul class="profile-stats">
+								<li><span>10+</span> Years Experience</li>
+								<li><span>VIC</span> Licensed Security</li>
+								<li><span>AU</span> Sole Trader</li>
+							</ul>
+						</div>
+
 					</div>
 				</div>
 			</section>
 
-			<section id="content">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<section>
-								<header>
-									<h2>The ReteCope Story</h2>
-									<h3>Innovation. Security. Reliability.</h3>
-								</header>
-								
-								<div class="row">
-									<div class="col-6 col-12-medium">
-										<p>
-											Founded by <strong>Oliver LY</strong>, ReteCope Technology was born out of a passion for making complex technology accessible for small to medium-sized businesses. With a professional background rooted in the fast-paced <strong>Melbourne</strong> tech market, Oliver recognized a gap in the industry: businesses needed more than just a technician—they needed a technology partner.
-										</p>
-										<p>
-											Today, ReteCope Technology operates across two major Australian hubs. Whether we are installing high-end CCTV systems in the suburbs of Victoria or optimizing remote network infrastructure in the <strong>Pilbara region of Western Australia</strong>, our mission remains the same: to provide secure, scalable, and smart technology solutions.
-										</p>
-									</div>
-									<div class="col-6 col-12-medium">
-										<p>
-											As a <strong>Sole Trader</strong>, Oliver provides a level of personal accountability that larger firms cannot match. When you work with ReteCope, you are working directly with the expert. This hands-on approach ensures that every POS system, security camera, and smart home setup is executed with precision.
-										</p>
-										<h4>Why Choose ReteCope?</h4>
-										<ul class="check-list">
-											<li><strong>National Expertise, Local Service:</strong> Melbourne-trained skill with local Karratha availability.</li>
-											<li><strong>Full-Stack Solutions:</strong> We handle everything from the physical cabling to the cloud software.</li>
-											<li><strong>Compliance Focused:</strong> Fully licensed with ABN and PSIR credentials for your peace of mind.</li>
-										</ul>
-									</div>
-								</div>
-							</section>
+			<section class="logo-slider">
+				<div class="slider-track">
+					<span class="text-logo unifi">U<span>niFi</span></span>
+					<span class="text-logo cisco">CISCO</span>
+					<span class="text-logo sophos">SOPHOS</span>
+					<span class="text-logo starlink">STARLINK</span>
+					<span class="text-logo telstra">Telstra</span>
+					<span class="text-logo netgear">NETGEAR</span>
+                    <span class="text-logo hikvision">HIK<span>VISION</span></span>
+					<span class="text-logo dahua">dahua</span>
+				</div>
+			</section>
+
+			<section class="services-section">
+				<div class="main-container">
+					<div class="services-grid">
+						
+						<div class="service-card">
+							<div class="card-icon-wrapper">🛡️</div>
+							<h4>Fully Licensed</h4>
+							<p>Holding VIC PSIR: Z33-160-70S. We are authorized to design and install high-end security and CCTV infrastructure.</p>
 						</div>
+
+						<div class="service-card">
+							<div class="card-icon-wrapper">🇦🇺</div>
+							<h4>Direct Accountability</h4>
+							<p>As a Sole Trader in Australia, you deal directly with the expert. No call centers, just professional IT results.</p>
+						</div>
+
+						<div class="service-card">
+							<div class="card-icon-wrapper">🚀</div>
+							<h4>Remote & Onsite</h4>
+							<p>Whether you are in Noble Park North or Karratha, we provide proactive monitoring and rapid onsite response.</p>
+						</div>
+
 					</div>
 				</div>
 			</section>
 
-			<section id="footer">
-				<div class="container">
-					<div class="row">
-						<div class="col-8 col-12-medium">
-							<section>
-								<h2>Licensing & Compliance</h2>
-								<p>
-									<strong>ABN:</strong> 22 613 403 242<br />
-									<strong>PSIR:</strong> Z33-160-70S (Victoria)
-								</p>
-							</section>
+			<footer id="modern-footer">
+				<div class="main-container">
+					<div class="footer-grid">
+						<div class="footer-col brand-col">
+							<img src="images/logo.png" alt="ReteCope Logo" class="footer-logo">
+							<p>Expert infrastructure and proactive remote support for Commercial and Residential clients.</p>
+							<div class="footer-badges">
+								<span class="license-badge">VIC PSIR: Z33-160-70S</span>
+							</div>
 						</div>
-						<div class="col-4 col-12-medium imp-medium">
-							<section>
-								<h2>Get In Touch</h2>
-								<p>Ready to upgrade your technology? Oliver is available for consultations in both Melbourne and Karratha.</p>
-							</section>
+						<div class="footer-col">
+							<h4>Solutions</h4>
+							<ul>
+								<li><a href="index.html">Melbourne Support</a></li>
+								<li><a href="karratha.html">Karratha Support</a></li>
+								<li><a href="issues.html">Issues</a></li>
+								<li><a href="contact.html">Contact Us</a></li>
+							</ul>
+						</div>
+						<div class="footer-col">
+							<h4>Get In Touch</h4>
+							<ul class="contact-list">
+								<li><a href="tel:0478882356">📞 0478 88 23 56</a></li>
+								<li><a href="mailto:info@retecope.com.au">✉️ info@retecope.com.au</a></li>
+								<li>📍 Victoria & WA Support</li>
+							</ul>
+						</div>
+					</div>
+					<div class="footer-bottom">
+						<div class="bottom-content">
+							<p>&copy; 2026 ReteCope Technology. Directed by Kim Heng Ly (Oliver).</p>
 						</div>
 					</div>
 				</div>
-			</section>
-
-			<div id="copyright">
-				&copy; 2026 ReteCope Technology. All rights reserved. | ABN 22 613 403 242
-			</div>
+			</footer>
 
 		</div>
 
-		<script src="assets/js/jquery.min.js"></script>
-		<script src="assets/js/browser.min.js"></script>
-		<script src="assets/js/breakpoints.min.js"></script>
-		<script src="assets/js/util.js"></script>
-		<script src="assets/js/main.js"></script>
+		<script>
+			const nav = document.getElementById("main-nav");
+			const btn = document.getElementById("menuBtn");
+			function toggleMobileMenu(e) { e.stopPropagation(); nav.classList.toggle("is-open"); btn.classList.toggle("active"); }
+			function closeMenu() { nav.classList.remove("is-open"); btn.classList.remove("active"); }
+			document.querySelectorAll('#main-nav a').forEach(link => { link.addEventListener('click', closeMenu); });
+		</script>
 	</body>
 </html>

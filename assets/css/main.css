@@ -88,7 +88,7 @@ ul { list-style: none !important; }
 .telstra { color: #003399 !important; font-style: italic; }
 .starlink { color: #000 !important; letter-spacing: 5px; }
 .hikvision { color: #333 !important; } .hikvision span { color: #ff0000 !important; }
-.dahua { color: #333 !important; } .dahua span { color: #ff0000 !important; }
+.dahua { color: #ff0000 !important; } .dahua span { color: #333 !important; }
 @keyframes scroll { from { transform: translateX(0); } to { transform: translateX(-50%); } }
 
 /* --- [5] SERVICE CARDS --- */
